@@ -6,3 +6,4 @@ from torchcv.utils.box import change_box_order
 
 from torchcv.utils.meshgrid import meshgrid
 from torchcv.utils.one_hot_embedding import one_hot_embedding
+from torchcv.utils.load_pretrained_model import load_pretrained_model
