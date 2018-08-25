@@ -7,3 +7,5 @@ from torchcv.models.retinanet.retinanet import RetinaNet
 
 from torchcv.models.ssd.net import SSD300, SSD512
 from torchcv.models.ssd.box_coder import SSDBoxCoder
+
+from torchcv.models.pix2pix import Pix2PixGenerator, Pix2PixDiscriminator
