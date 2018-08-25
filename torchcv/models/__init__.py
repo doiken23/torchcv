@@ -1,3 +1,5 @@
+from torchcv.models.vgg import vgg16
+
 from torchcv.models.fpnssd.net import FPNSSD512
 
 from torchcv.models.retinanet.box_coder import BoxCoder
