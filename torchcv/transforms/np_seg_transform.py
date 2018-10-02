@@ -16,13 +16,13 @@ class NPSegRandomFlip(object):
 
         if self.horizontal:
             if np.random.rand() < self.p:
-                img = np.flip(img, 1).copy()
-                target = np.flip(target, 1).copy()
+                img = np.flip(img, 0).copy()
+                target = np.flip(target, 0).copy()
 
         if self.vertical:
             if np.random.rand() < self.p:
-                img = np.flip(img, 2).copy()
-                target = np.flip(target, 2).copy()
+                img = np.flip(img, 1).copy()
+                target = np.flip(target, 1).copy()
 
         return (img, target)
 
@@ -39,7 +39,7 @@ class NPSegRandomRotate(object):
         img, target = data
 
         n = np.random.choice([0, 1, 2, 3])
-        img = np.rot90(img, n, (1,2)).copy()
-        target = np.rot90(target, n, (1,2)).copy()
+        img = np.rot90(img, n, (0,1)).copy()
+        target = np.rot90(target, n, (0,1)).copy()
 
         return (img, target)
